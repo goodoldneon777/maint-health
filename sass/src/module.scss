@@ -1,0 +1,78 @@
+.m-equipList {
+  padding: 0;
+
+  .equipTable {
+    margin: 0;
+    padding: 0;
+
+    .status {
+      width: 1em;
+    }
+
+    .highlight {
+      background-color: #d9edf7;
+    }
+
+    table {
+      margin: 0;
+    }
+  }
+}
+
+
+
+.m-equipDetail {
+
+  .panel-content {
+    position: relative;
+  }
+
+  .equipName {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .equipCommentInput {
+    vertical-align: top;
+
+    .input-group-btn {
+      vertical-align: top;
+    }
+
+    textarea {
+      min-height: 1em;
+    }
+
+    button {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .equipCommentList {
+
+    table {
+      margin: 0;
+
+      th {
+        text-align: center;
+      }
+
+      .commentDate {
+        width: 10em;
+      }
+    }
+  }
+
+  .mask {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    content: '';
+  }
+}
