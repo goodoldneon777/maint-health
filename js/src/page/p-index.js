@@ -67,9 +67,6 @@ page.insert_db_equipComment = function(equipComment) {
 
 		submit();	//Add the comment to the database.
 
-		m_equipDetail.commentList_populate(equipID);	//Refresh the comment list.
-
-		elem_equipCommentInput_textarea.val('');	//Clear comment input.
 	} else {
 		return false;
 	}
@@ -96,6 +93,10 @@ page.insert_db_equipComment = function(equipComment) {
 
 	    		bootstrapDialog('error', msg);
 	    	}
+
+	    	m_equipDetail.commentList_populate(equipID);	//Refresh the comment list.
+
+				elem_equipCommentInput_textarea.val('');	//Clear comment input.
 	    },
 	    error: function(XMLHttpRequest, textStatus, errorThrown) { 
 	    	var msg = 'Status: ' + textStatus + '\n' + 'Error: ' + errorThrown;
